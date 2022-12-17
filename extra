@@ -1,0 +1,88 @@
+https://code.visualstudio.com/ > install
+https://nodejs.org/en/ (install)
+https://github.com/(create account)
+https://git-scm.com/downloads (install)
+https://www.postman.com/ (install)
+
+https://github.com/Aakashdeveloper (follow)
+(add to chrome)
+https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
+//Extensions
+> TabNine
+> vscode-icons
+> git history
+> git Lens
+> Code Spell Checker
+
+//Prerequest
+Html
+CSS
+Basic JavaScript
+(ifelse,function,loop,array,object,variable)
+
+Npm
+////////////////////////
+React = 3
+Mock API> Dummy Api
+json-server
+Github
+Deployment
+-> MERN
+-> Netlify
+-> Aws
+-> Docker
+-> Nginx
+React_hooks -1
+React-GraphQL-1
+HOC
+Basic React Native=1
+React-Redux =1
+React-Redux =1
+Testing Jest Enzime
+///////Walkthrough///////
+React-Saga -1
+
+--------NOT Backend--------------
+API
+> GraphQL
+> Login/Logout
+> Zomato
+
+
+//////////////
+Node Package managers
+> 2,202,201
+
+//
+> Package.Json
+# entry point to application package
+# It contains all the packages required for the app
+# It Contains Script
+# It Contains metadata (name,version,description)
+
+* JSON > JavaScript Object Notation
+[
+    {
+        "name":"Kanika",
+        "city":"Paris"
+    },
+    {
+        "name":"Amit",
+        "city":"Delhi"
+    }
+]
+
+/////////////
+> Step to generate package.json
+* NodeJs must be installed in your laptop
+* Go inside the folder using cmd / terminal
+* npm init 
+* answer all questions
+* type "yes"
+
+/////////////
+> Step to install package
+* NodeJs must be installed in your laptop
+* Go inside the folder using cmd / terminal
+* npm i packagename/npm install packagename
