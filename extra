@@ -86,3 +86,73 @@ Node Package managers
 * NodeJs must be installed in your laptop
 * Go inside the folder using cmd / terminal
 * npm i packagename/npm install packagename
+
+
+////////////////////////////////////////////////////////////////
+>>Setup React App
+
+# windows (one time in new laptop)
+> open the cmd as administrator
+> npm i -g create-react-app
+
+# Next Everytime you need to generate the new app
+> open cmd
+> Go inside folder using cmd where you want new app
+> create-react-app appname
+
+----------------------
+
+# mac (one time in new laptop)
+> open the terminal
+> sudo npm i -g create-react-app
+
+# Next Everytime you need to generate the new app
+> open terminal
+> Go inside folder using cmd where you want new app
+> create-react-app appname
+
+**********************************
+# Window/mac
+> Go inside folder using cmd where you want new app
+> npx create-react-app appname
+
+
+////////////////////////////////////////////////////////////////
+>> Step to run app
+> Go inside app folder using cmd
+> npm start
+
+
+React
+> React is frontend lib which help
+to create single page application
+using component based structure
+
+
+React > is the main library which provide all functionality
+React-DOM > help to render the content
+React-script > help to run or complie the app
+
+
+
+// component
+funtional component
+class component
+hooks component
+
+
+////////////////////////////////////////////////////////////////
+//es5 (Ecma Script)
+function add(a,b){
+    return a+b
+}
+
+//es6
+let add = (a,b) => {return a+b}
+
+function add(a,b){
+    return a,b
+}
+
+add(4,9)
+9
