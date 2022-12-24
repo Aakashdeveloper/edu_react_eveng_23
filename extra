@@ -120,6 +120,7 @@ Node Package managers
 ////////////////////////////////////////////////////////////////
 >> Step to run app
 > Go inside app folder using cmd
+> npm i
 > npm start
 
 
@@ -137,10 +138,29 @@ React-script > help to run or complie the app
 
 // component
 funtional component
+> Dumb component
+> Mainly use for display purpose
+> Cannot Maintain state
+
 class component
+> Logical Component
+> Use for logics as well as display
+> We can maintain state
+
+
 hooks component
 
 
+////////////////////////////////////////
+State
+> Act like a local variable
+> We can update the value of state
+> Any data interaction will happen through state
+> Whenever state update component will re-render
+
+Props
+> Help to transfer the data (between 2 nested component)
+> We cannot update the value of props
 ////////////////////////////////////////////////////////////////
 //es5 (Ecma Script)
 function add(a,b){
@@ -156,3 +176,99 @@ function add(a,b){
 
 add(4,9)
 9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(get) cityname >           http://3.17.216.66:4000/location
+(get) restwrtcity >        http://3.17.216.66:4000/restaurant?stateId=1
+(get) quickSearch>         http://3.17.216.66:4000/quicksearch
+
+(get) onbasisofMeal >      http://3.17.216.66:4000/restaurant?mealtype_id=
+(get) cuisinefilter >      http://3.17.216.66:4000/filter/4?cuisine=1
+(get) costfilter >         http://3.17.216.66:4000/filter/1?hcost=1000&lcost=500
+
+(get) restdetails >        http://3.17.216.66:4000/details/1
+(get) menu >               http://3.17.216.66:4000/menu/1
+
+(post) orderspage >        http://3.17.216.66:4000/menuItem
+                           body [1,4,5]
+(post)placeOrder >        
+
+(get) allorder>            
+       
+(get) restaurants>         http://3.17.216.66:4000/restaurants
+
+
+var a = "hiii" 'hi' `hi`
+
+> map is use to iterate over the Array
+> it always return same length of output array as input array
+> it is use for applying the logics (add,sub,mul, print in html)
+
+var a = [4,7,6,34,23,41,14,56,12,23,67,49];
+a.map((data) => {return data*2})
+[8, 14, 12, 68, 46, 82, 28, 112, 24, 46, 134, 98]
+
+> Filter is use to filter out the value
+> it may or may not return the same length of output as input array
+> Filter only return those data for which output or condition is true
+
+var a = [4,7,6,34,23,41,14,56,12,23,67,49];
+a.filter((data) => {return data>30})
+[34, 41, 56, 67, 49]
+
+a.map((data) => {return data>30})
+[false, false, false, true, false, true, false, true, false, false, true, true]
+
+
+var a = [0,1,2,3]
+a.filter((data) => {return data*2})
+[1,2,3]
+
+a.map((data) => {return data*2})
+[0,2,4,6]
+
+var city = ['Delhi', 'Amsterdam', 'London', 'Venice', 'Boston', 'Helsinki']
+
+city.indexOf('Innsburg')
+-1
+city.indexOf('Stockholm')
+-1
+city.indexOf('Delhi')
+0
+city.indexOf('Venice')
+3
+
+
+parent > child (props)
+child > parent (props with function)
+
+parent > wrt function
+child > call function
+
+
+//parent 
+function add(a,b){
+    return a+b
+}
+
+
+//child
+add(1,2)
