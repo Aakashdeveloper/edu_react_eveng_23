@@ -272,3 +272,35 @@ function add(a,b){
 
 //child
 add(1,2)
+
+
+Params
+> What we pass after / in url
+> Need to define the routing
+> If defined than need to pass
+> Should be use for 1 or 2 values
+
+queryParams
+> What we pass after ? in url
+> No Need to define
+> Optional to pass
+> Can be use for multiple values
+
+
+//default props
+History > Use for redirection
+Location > For Query Params
+Match > For Params
+
+var a = "?page=1&city=Delhi"
+undefined
+a.split('&')
+(2) ['?page=1', 'city=Delhi']0: "?page=1"1: "city=Delhi"length: 2[[Prototype]]: Array(0)
+var out = a.split('&')
+undefined
+out
+(2) ['?page=1', 'city=Delhi']
+out[1].split('=')
+(2) ['city', 'Delhi']
+out[1].split('=')[1]
+'Delhi'

@@ -6,8 +6,8 @@ import Display from './ProductDisplay';
 import JSON from './db.json';
 
 class App extends Component {
-    constructor(props) {
-        super(props)
+    constructor() {
+        super()
 
         this.state={
             productData:JSON,
@@ -20,9 +20,7 @@ class App extends Component {
             return data.name.toLowerCase().indexOf(keyword.toLowerCase())>-1
         })
 
-
         this.setState({filterData:output});
-
     }
     
     render(){
