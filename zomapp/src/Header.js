@@ -1,12 +1,15 @@
 import React,{Component} from 'react';
 import './Header.css';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
     render(){
         return(
             <header>
                 <div id="icon">
-                    <h1>Xomato</h1>
+                    <Link to="/"><h1>Xomato</h1></Link>
+                    
+                    
                 </div>
                 <div id="loginset">
                     <button>Login</button>

@@ -179,23 +179,6 @@ add(4,9)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (get) cityname >           http://3.17.216.66:4000/location
 (get) restwrtcity >        http://3.17.216.66:4000/restaurant?stateId=1
 (get) quickSearch>         http://3.17.216.66:4000/quicksearch
@@ -304,3 +287,16 @@ out[1].split('=')
 (2) ['city', 'Delhi']
 out[1].split('=')[1]
 'Delhi'
+
+
+//https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps
+
+//es5
+var a = 10
+var b = "My age is "+a
+"My age is 10"
+
+//es6
+var a = 10
+var b = `My age is ${a}`
+"My age is 10"
