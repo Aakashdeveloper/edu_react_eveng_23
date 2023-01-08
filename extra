@@ -22,10 +22,10 @@ Basic JavaScript
 (ifelse,function,loop,array,object,variable)
 
 Npm
-////////////////////////
 React = 3
 Mock API> Dummy Api
 json-server
+////////////////////////
 Github
 Deployment
 -> MERN
@@ -300,3 +300,37 @@ var b = "My age is "+a
 var a = 10
 var b = `My age is ${a}`
 "My age is 10"
+
+var a = [4,7,9,13,45,9]
+undefined
+a.splice(3,1)
+[13]
+a
+(5) [4, 7, 9, 45, 9]
+a.splice(a.indexOf(7),1)
+[7]
+a
+(4) [4, 9, 45, 9]
+a.splice(a.indexOf(9),1)
+[9]
+a
+(3) [4, 45, 9]
+a.splice(a.indexOf(9),1)
+[9]
+a
+(2) [4, 45]
+a.splice(a.indexOf(9),1)
+[45]
+
+///////////
+#window
+> open cmd as admin
+> npm i -g json-server
+> go inside the folder where file present
+> json-server --watch orders.json --port 7899
+
+#mac/linux
+> open terminal
+> sudo npm i -g json-server
+> go inside the folder where file present
+> json-server --watch orders.json --port 7899
