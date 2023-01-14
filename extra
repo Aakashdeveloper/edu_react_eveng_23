@@ -25,6 +25,10 @@ Npm
 React = 3
 Mock API> Dummy Api
 json-server
+
+React_hooks -1
+React-GraphQL-1
+HOC
 ////////////////////////
 Github
 Deployment
@@ -33,12 +37,13 @@ Deployment
 -> Aws
 -> Docker
 -> Nginx
-React_hooks -1
-React-GraphQL-1
-HOC
+loginapp
+
+
+    React-Redux =1
+
+
 Basic React Native=1
-React-Redux =1
-React-Redux =1
 Testing Jest Enzime
 ///////Walkthrough///////
 React-Saga -1
@@ -334,3 +339,11 @@ a.splice(a.indexOf(9),1)
 > sudo npm i -g json-server
 > go inside the folder where file present
 > json-server --watch orders.json --port 7899
+
+https://www.codingame.com/playgrounds/8595/reactjs-higher-order-components-tutorial
+
+
+a component that take component and data as a parameter and 
+return compnent with data
+
+
