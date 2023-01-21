@@ -35,11 +35,10 @@ Deployment
 -> Netlify
 -> Aws
 -> Docker
-////////////////////////    
-
--> Nginx
 React-Redux =1
 Basic React Native=1
+////////////////////////    
+-> Nginx
 Testing Jest Enzime
 ///////Walkthrough///////
 React-Saga -1
@@ -364,4 +363,59 @@ return compnent with data
 
 Docker build . -t imagename
 docker run -p 8089:3000 imagename
+
+
+Action
+>> All Api Calling
+>> type and payload
+Reducer
+>> Help mange State
+>> switch case
+Store
+>> Take data from reducer
+>> Accessable accross the app
+Component
+>> Responsible for calling Action
+>> View the data
+
+
+npx create-react-native-app mymobi
+
+
+
+
+
+npm i @apollo/client
+---------------------------------------------------------------
+
+import {Apollo Client, InMemoryCache, ApolloProvider, HttpLink, from} from "@apollo/client"
+
+const Link = from([new HttpLink({uri: "http://localhost.."})])
+
+const client = new ApolloClient({
+   cache: new InMemoryCache
+   link: Link
+})
+
+<ApolloProvider client={client}>
+      <showData/>
+</ApolloProvider>
+------------------------------------------------------------------------
+
+import{useQuery, gql} from @apollo/client
+
+const showData=()=>{
+     const Query = gql `query{book(id:5){name}}`
+}
+
+const{error,loading,data}= useQuery(Query)
+useEffect(()=> {
+   console.log(error)
+   console.log(data)
+})
+---------------------------------------------------------------------
+
+This is the code of frontend dealing with GraghQL(shown by Harshad)
+Hope this helps,though this may have some typo..
+
 
