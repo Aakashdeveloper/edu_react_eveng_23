@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const ArticleDisplay = (props) =>{
     const renderArticle =({adata}) =>{
         if(adata){
             return adata.map((item) =>{
                 return(
-                <Link to={`/details/${item.id}`} className="item">
+                <div className="item">
                     <div className="left"
                     style={{background:`url(/images/articles/${item.img})`}}>
                     </div>
@@ -33,7 +32,7 @@ const ArticleDisplay = (props) =>{
                             </span>
                         </div>
                     </div>
-                </Link>
+                </div>
                 )
             })
         }

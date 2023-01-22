@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import {Link} from 'react-router-dom';
 
 var settings = {
     dots: true,
@@ -16,9 +15,9 @@ const showGallery = ({gdata}) =>{
             <Slider {...settings}>
                 {gdata.map((item) => {
                     return(
-                        <Link to='/' className="slider-item">
+                        <div className="slider-item">
                             <div className="image" style={{background:`url(/images/galleries/${item.images[0].img})`}}></div>
-                        </Link>
+                        </div>
                     )
                 })}
             </Slider>

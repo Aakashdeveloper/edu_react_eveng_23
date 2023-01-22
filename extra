@@ -35,10 +35,9 @@ Deployment
 -> Netlify
 -> Aws
 -> Docker
+-> Nginx
 React-Redux =1
 Basic React Native=1
-////////////////////////    
--> Nginx
 Testing Jest Enzime
 ///////Walkthrough///////
 React-Saga -1
@@ -381,6 +380,8 @@ Component
 
 npx create-react-native-app mymobi
 
+
+https://github.com/Aakashdeveloper/react-interview-questions
 
 
 
