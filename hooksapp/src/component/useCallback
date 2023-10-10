@@ -1,0 +1,41 @@
+import React, { useState, useCallback } from 'react';
+
+const Button = ({ onClick, label }) => {
+  console.log(`Button rendering for label: ${label}`);
+  return <button onClick={onClick}>{label}</button>;
+};
+
+const App = () => {
+  const [count, setCount] = useState(0);
+
+  // Define a callback function that increments the count state
+  const increment = useCallback(() => {
+    setCount(count + 1);
+  }, [count]); // The function will only be recreated if count changes
+
+  return (
+    <div>
+      <h1>useCallback Example</h1>
+      <p>Count: {count}</p>
+      <Button onClick={increment} label="Increment" />
+    </div>
+  );
+};
+
+export default App;
+In this example:
+
+We have a Button component that takes an onClick function as a prop and a label to display on the button.
+
+In the App component, we use the useState hook to manage a count state.
+
+We define a callback function called increment using useCallback. This function increments the count state by 1 when called. We specify [count] as the dependency array, meaning the function will only be recreated if the count state changes.
+
+The Button component is rendered with the increment callback as the onClick prop. This means that when you click the button, it calls the increment function to update the count state.
+
+Using useCallback is useful when you want to avoid creating new function instances in child components on every render, which can help optimize performance in some scenarios.
+
+
+
+
+
